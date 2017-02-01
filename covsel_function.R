@@ -10,8 +10,8 @@ covsel = function(D, lambda, rho, alpha){
     return(obj)
   }
   
-  shrinkage = function(a, kp){
-    y = sign(a) * pmax(0, abs(a) - lambda)
+  shrinkage = function(y, lambda){
+    y = sign(y) * pmax(0, abs(y) - lambda)
   }
   
   mynorm = function(a){
